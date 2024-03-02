@@ -18,6 +18,8 @@ function WebsiteCard({ card }) {
     stars,
     bestChoice,
     bestValue,
+    discountPercentage: discount,
+    features,
   } = card;
 
   return (
@@ -28,6 +30,8 @@ function WebsiteCard({ card }) {
         title={title}
         description={description}
         highlights={highlights}
+        discount={discount}
+        features={features}
       />
       <WebsiteCardRating rating={rating} status={status} stars={stars} />
     </div>

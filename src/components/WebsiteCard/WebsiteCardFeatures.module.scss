@@ -1,0 +1,40 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.features {
+  margin: 1rem 0;
+
+  &__heading {
+    margin-bottom: 1rem;
+    @include fontMd;
+    color: $color-grey-900;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    @include fontSm;
+  }
+
+  &__icon {
+    @include center;
+    padding: 5px;
+    background-color: $color-blue-light-2;
+    border-radius: 50%;
+
+    & svg {
+      height: 1.2rem;
+      width: 1.2rem;
+      stroke: $color-blue-darker;
+    }
+  }
+}

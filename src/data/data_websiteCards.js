@@ -17,6 +17,7 @@ export const websiteCards = [
     bestChoice: true,
     bestValue: false,
     discountPercentage: null,
+    features: null,
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const websiteCards = [
     bestChoice: false,
     bestValue: true,
     discountPercentage: null,
+    features: null,
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const websiteCards = [
     bestChoice: false,
     bestValue: false,
     discountPercentage: null,
+    features: null,
   },
 
   {
@@ -84,5 +87,6 @@ export const websiteCards = [
     bestChoice: false,
     bestValue: false,
     discountPercentage: 26,
+    features: ["Documentation", "Easy Use", "Out Of Box"],
   },
 ];

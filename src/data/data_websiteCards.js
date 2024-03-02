@@ -16,8 +16,8 @@ export const websiteCards = [
     caption: "Builder 1",
     bestChoice: true,
     bestValue: false,
+    discountPercentage: null,
   },
-
   {
     id: 2,
     number: 2,
@@ -33,8 +33,8 @@ export const websiteCards = [
     caption: "Biulder",
     bestChoice: false,
     bestValue: true,
+    discountPercentage: null,
   },
-
   {
     id: 3,
     number: 3,
@@ -50,5 +50,39 @@ export const websiteCards = [
     caption: "Builder 1",
     bestChoice: false,
     bestValue: false,
+    discountPercentage: null,
+  },
+
+  {
+    id: 4,
+    number: 4,
+    title: "CDK Responsive Builder",
+    description:
+      "An extensive library of widgets and apps, and detiled step-by-step guides.",
+    highlights: [
+      {
+        id: 401,
+        rating: 9.9,
+        highlight: "Building Responsive",
+      },
+      {
+        id: 402,
+        rating: 8.9,
+        highlight: "Cool",
+      },
+      {
+        id: 403,
+        rating: 8.9,
+        highlight: "Docs",
+      },
+    ],
+    rating: 9.1,
+    stars: 4,
+    status: "Very Good",
+    image: websiteImg,
+    caption: "CDK",
+    bestChoice: false,
+    bestValue: false,
+    discountPercentage: 26,
   },
 ];

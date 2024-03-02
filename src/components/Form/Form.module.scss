@@ -17,7 +17,7 @@
   cursor: pointer;
 
   &__icon {
-    @include iconCenter;
+    @include center;
 
     & svg {
       height: 2.4rem;

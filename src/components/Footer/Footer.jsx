@@ -1,5 +1,7 @@
 import styles from "./Footer.module.scss";
 import { footerLinks } from "../../data/data_footerLinks";
+import { IoChevronDownOutline } from "react-icons/io5";
+import Button from "../Button/Button";
 
 function FooterLink({ link }) {
   return (
@@ -27,6 +29,16 @@ function Footer() {
         {footerLinks.map((el) => (
           <FooterLink key={el.id} link={el} />
         ))}
+        <div className={styles.footer__country}>
+          <div className={styles["footer__country--btnContainer"]}>
+            <Button type="half" variation="secondary">
+              United States
+              <span className="center">
+                <IoChevronDownOutline />
+              </span>
+            </Button>
+          </div>
+        </div>
       </div>
     </footer>
   );

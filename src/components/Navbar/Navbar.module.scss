@@ -1,0 +1,31 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.nav {
+  background-color: $color-grey-950;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    color: $color-grey-100;
+  }
+
+  &__link {
+    @include fontXs;
+  }
+}

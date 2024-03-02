@@ -1,0 +1,42 @@
+@import "./variables";
+
+@mixin fontTiny {
+  font-size: $font-tiny;
+  line-height: 1.5;
+}
+
+@mixin fontXs {
+  font-size: $font-xs;
+  line-height: 1.4;
+}
+
+@mixin fontSm {
+  font-size: $font-sm;
+  line-height: 1.6;
+}
+
+@mixin fontMd {
+  font-size: $font-md;
+  line-height: 1.5;
+}
+
+@mixin fontLg {
+  font-size: $font-lg;
+  line-height: 1.4;
+}
+
+@mixin fontXl($lineHeight) {
+  font-size: $font-xl;
+  line-height: $lineHeight;
+}
+
+@mixin fontHuge {
+  font-size: $font-huge;
+  line-height: 1.25;
+}
+
+@mixin iconCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

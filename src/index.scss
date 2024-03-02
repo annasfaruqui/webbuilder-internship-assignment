@@ -1,0 +1,36 @@
+@import "./sass/variables";
+@import "./sass/mixins";
+
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  @include fontMd;
+  font-weight: 400;
+  color: $color-grey-800;
+  background-color: $color-grey-50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,11 +1,11 @@
-import Form from "../Form/Form";
 import styles from "./Navbar.module.scss";
+import SearchForm from "../SearchForm/SearchForm";
 
 function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={`inner-container ${styles.nav__layout}`}>
-        <Form />
+        <SearchForm />
         <ul className={styles.nav__list}>
           <li>
             <a className={styles.nav__link} href="/categories">

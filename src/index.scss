@@ -55,6 +55,12 @@ body {
   @include fontXl(1.4);
 }
 
+.tertiary-heading {
+  @extend %heading;
+  @include fontXl(1.4);
+  color: $color-grey-700;
+}
+
 .strong {
   font-weight: 700;
 }

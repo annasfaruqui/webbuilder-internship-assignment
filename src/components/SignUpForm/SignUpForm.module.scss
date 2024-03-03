@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  margin-top: 1rem;
+
+  &__input {
+    background-color: $color-grey-0;
+    padding: 1.6rem 2rem;
+    width: 75%;
+
+    border: 2px solid $color-grey-0;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+
+    &:focus {
+      outline: 0;
+      border: 2px solid $color-blue;
+      border-right: none;
+    }
+  }
+
+  &__btn {
+    background-color: $color-blue;
+    color: $color-grey-0;
+    padding: 1.6rem 2rem;
+    @include fontXs;
+    width: 25%;
+    cursor: pointer;
+
+    border: none;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $color-blue-hover;
+    }
+  }
+}

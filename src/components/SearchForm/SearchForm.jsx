@@ -1,7 +1,7 @@
 import { IoSearch } from "react-icons/io5";
-import styles from "./Form.module.scss";
+import styles from "./SearchForm.module.scss";
 
-function Form() {
+function SearchForm() {
   return (
     <form>
       <div className={styles.search}>
@@ -14,4 +14,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default SearchForm;

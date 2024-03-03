@@ -6,29 +6,62 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5px;
   padding: 1rem;
+
+  @include respond(small-desktop) {
+    gap: 2rem;
+  }
 
   &__number {
     position: absolute;
-    top: 3.2rem;
-    left: -2.2rem;
+    top: 1rem;
+    left: 1rem;
 
-    width: 4.4rem;
-    height: 4.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
+    @include fontTiny;
+    width: 3rem;
+    height: 3rem;
     border: $border;
     border-radius: 50%;
 
     background-color: $color-grey-0;
-    @include fontLg;
     color: $color-grey-600;
+
+    @include respond(phone) {
+      @include fontSm;
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+
+    @include respond(small-desktop) {
+      @include fontLg;
+      top: 3.2rem;
+      left: -2.2rem;
+
+      width: 4.4rem;
+      height: 4.4rem;
+    }
   }
 
   &__image {
-    width: 14rem;
+    width: 19rem;
+    align-self: flex-start;
+    margin-top: 3.6rem;
+
+    @include respond(phone) {
+      width: 30rem;
+      margin-top: 5rem;
+    }
+
+    @include respond(tab-port) {
+      align-self: center;
+      margin-top: 0;
+    }
+
+    @include respond(small-desktop) {
+      width: 14rem;
+    }
   }
 
   &__caption {

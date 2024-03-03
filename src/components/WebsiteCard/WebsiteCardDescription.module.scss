@@ -2,13 +2,19 @@
 @import "../../sass/mixins";
 
 .description {
-  &__col--2 {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  @include respond(phone) {
+    padding: 1rem 2rem;
+  }
+
+  @include respond(small-desktop) {
     padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
   }
 
   &__detail {
@@ -24,5 +30,8 @@
   background-color: $color-blue-light;
   padding: 0.5rem;
   border-radius: 0.4rem;
-  margin: 5px 0;
+
+  @include respond(small-desktop) {
+    margin: 5px 0;
+  }
 }

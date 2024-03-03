@@ -70,17 +70,17 @@
     } // 768px
   }
   @if $breakpoint == small-desktop {
-    @media only screen and (min-width: 64em) {
+    @media (min-width: 64em) {
       @content;
     } // 1024px
   }
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 80em) {
+    @media (min-width: 80em) {
       @content;
     } // 1280px
   }
   @if $breakpoint == huge-desktop {
-    @media only screen and (min-width: 96em) {
+    @media (min-width: 96em) {
       @content;
     } // 1536px
   }

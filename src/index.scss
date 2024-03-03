@@ -36,8 +36,21 @@ body {
 
 .section {
   @extend %container;
-  padding: 0 10rem;
+  padding: 0 2rem;
   margin-bottom: 8rem;
+  margin-top: 10rem;
+
+  @include respond(tab-port) {
+    padding: 0 4rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 0 7rem;
+  }
+
+  @include respond(small-desktop) {
+    padding: 0 10rem;
+  }
 }
 
 %heading {

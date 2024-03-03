@@ -12,16 +12,8 @@
 }
 
 html {
-  font-size: 43.75%;
+  font-size: 56.25%;
   box-sizing: border-box;
-
-  @include respond(tab-port) {
-    font-size: 50%;
-  }
-
-  @include respond(tab-land) {
-    font-size: 56.25%;
-  }
 
   @include respond(small-desktop) {
     font-size: 62.5%;

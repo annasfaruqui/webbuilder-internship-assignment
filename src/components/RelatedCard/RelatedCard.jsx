@@ -25,7 +25,7 @@ function RelatedCard({ card }) {
         </div>
         <div className={styles.related__details}>
           <strong className="strong">{name}</strong>
-          <p>{description}</p>
+          <p className={styles.related__description}>{description}</p>
           <p className={styles.related__discount}>
             <strong className={styles["related__discount--finalPrice"]}>
               ${finalPrice}

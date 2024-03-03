@@ -8,12 +8,12 @@ import SignUpSection from "./sections/SignUpSection";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <Header />
         <WebsiteCardsSection />
         <RelatedCardsSection />
-        {/* <SignUpSection /> */}
+        <SignUpSection />
       </main>
       <Footer />
     </>

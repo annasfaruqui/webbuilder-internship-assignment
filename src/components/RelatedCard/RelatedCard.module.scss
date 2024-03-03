@@ -48,6 +48,10 @@
     padding: 5px;
   }
 
+  &__description {
+    align-self: flex-start;
+  }
+
   &__discount {
     align-self: flex-start;
     display: flex;

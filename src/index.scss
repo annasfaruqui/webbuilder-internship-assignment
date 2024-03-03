@@ -40,7 +40,7 @@ body {
 
 .section {
   @extend %container;
-  padding: 0 3rem;
+  padding: 0 4rem;
   margin-bottom: 8rem;
 
   margin-top: 10rem; // this is a tmporary style for testing, remove after completion
@@ -75,8 +75,12 @@ body {
 
 .tertiary-heading {
   @extend %heading;
-  @include fontXl(1.4);
+  @include fontLg;
   color: $color-grey-700;
+
+  @include respond(phone) {
+    @include fontXl(1.4);
+  }
 }
 
 .strong {

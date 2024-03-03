@@ -1,0 +1,39 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  &__title {
+    @include fontTiny;
+    color: $color-grey-500;
+  }
+
+  &__list {
+    @include fontXs;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $color-grey-700;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    @include center;
+
+    & svg {
+      height: 1.4rem;
+      width: 1.4rem;
+      stroke: $color-grey-600;
+    }
+  }
+}

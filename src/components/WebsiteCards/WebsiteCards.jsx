@@ -4,7 +4,7 @@ import styles from "./WebsiteCards.module.scss";
 
 function WebsiteCards() {
   return (
-    <div className={`container ${styles.cards}`}>
+    <div className={styles.cards}>
       {websiteCards.map((card) => (
         <WebsiteCard key={card.id} card={card} />
       ))}

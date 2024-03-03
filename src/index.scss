@@ -24,10 +24,35 @@ body {
   background-color: $color-grey-50;
 }
 
-.container {
+%container {
   max-width: 120rem;
-  padding: 0 5rem;
   margin: 0 auto;
+}
+
+.inner-container {
+  @extend %container;
+  padding: 0 5rem;
+}
+
+.section {
+  @extend %container;
+  padding: 0 10rem;
+  margin-bottom: 8rem;
+}
+
+%heading {
+  color: $color-grey-900;
+  font-weight: 400;
+}
+
+.primary-heading {
+  @extend %heading;
+  @include fontHuge;
+}
+
+.secondary-heading {
+  @extend %heading;
+  @include fontXl(1.4);
 }
 
 .strong {

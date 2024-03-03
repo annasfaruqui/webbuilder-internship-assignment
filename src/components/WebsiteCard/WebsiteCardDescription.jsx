@@ -19,7 +19,7 @@ function WebsiteCardDescription({
       {discount && <p className={styles.discount}>{discount}% off</p>}
 
       <WebsiteCardHighlights highlights={highlights} />
-      <WebsiteCardFeatures features={features} />
+      {features && <WebsiteCardFeatures features={features} />}
 
       <Button type="half" variation="primary">
         Show more

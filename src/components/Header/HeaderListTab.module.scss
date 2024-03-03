@@ -1,0 +1,21 @@
+@import "../../sass/mixins";
+
+.list {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  margin: 1.6rem 0;
+
+  &__title {
+    @include fontXs;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    @include fontTiny;
+  }
+}

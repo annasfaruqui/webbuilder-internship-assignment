@@ -22,10 +22,20 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    color: $color-grey-100;
   }
 
   &__link {
     @include fontXs;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-100;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-grey-50;
+    }
   }
 }

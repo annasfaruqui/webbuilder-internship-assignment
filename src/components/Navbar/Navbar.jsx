@@ -1,11 +1,15 @@
 import styles from "./Navbar.module.scss";
 import SearchForm from "../SearchForm/SearchForm";
+import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={`inner-container ${styles.nav__layout}`}>
         <SearchForm />
+        <button className={styles.nav__btn}>
+          <IoMenu />
+        </button>
         <ul className={styles.nav__list}>
           <li>
             <a className={styles.nav__link} href="/categories">

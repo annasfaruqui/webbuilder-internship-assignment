@@ -8,7 +8,7 @@ import SignUpSection from "./sections/SignUpSection";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <Header />
         <WebsiteCardsSection />

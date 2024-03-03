@@ -35,7 +35,11 @@ body {
 
 .inner-container {
   @extend %container;
-  padding: 0 5rem;
+  padding: 0 1rem;
+
+  @include respond(phone) {
+    padding: 0 5rem;
+  }
 }
 
 .section {

@@ -11,17 +11,25 @@
   &__layout {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    justify-content: space-between;
+    gap: 3rem;
+
+    @include respond(tab-land) {
+      justify-content: center;
+      gap: 10rem;
+    }
   }
 
   &__list {
-    list-style: none;
+    display: none;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    @include respond(tab-land) {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+    }
   }
 
   &__link {
@@ -36,6 +44,24 @@
     &:hover,
     &:active {
       color: $color-grey-50;
+    }
+  }
+
+  &__btn {
+    display: block;
+
+    @include center;
+    border: none;
+    background-color: transparent;
+
+    & svg {
+      height: 3.6rem;
+      width: 3.6rem;
+      stroke: $color-grey-100;
+    }
+
+    @include respond(tab-land) {
+      display: none;
     }
   }
 }

@@ -40,14 +40,10 @@ body {
 
 .section {
   @extend %container;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin-bottom: 8rem;
 
   margin-top: 10rem; // this is a tmporary style for testing, remove after completion
-
-  @include respond(tab-port) {
-    padding: 0 4rem;
-  }
 
   @include respond(tab-land) {
     padding: 0 7rem;
@@ -65,7 +61,11 @@ body {
 
 .primary-heading {
   @extend %heading;
-  @include fontHuge;
+  @include fontXl(1.4);
+
+  @include respond(phone) {
+    @include fontHuge;
+  }
 }
 
 .secondary-heading {

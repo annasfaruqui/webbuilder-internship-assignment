@@ -13,7 +13,7 @@ function App() {
         <Header />
         <WebsiteCardsSection />
         <RelatedCardsSection />
-        <SignUpSection />
+        {/* <SignUpSection /> */}
       </main>
       <Footer />
     </>

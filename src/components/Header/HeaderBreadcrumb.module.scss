@@ -3,22 +3,39 @@
 
 .breadcrumb {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+  }
 
   &__title {
-    @include fontTiny;
+    @include fontXs;
     color: $color-grey-500;
+
+    @include respond(tab-port) {
+      @include fontTiny;
+    }
   }
 
   &__list {
     @include fontXs;
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.8rem;
     color: $color-grey-700;
+
+    @include respond(tab-port) {
+      gap: 1rem;
+      align-items: center;
+      flex-direction: row;
+    }
   }
 
   &__item {

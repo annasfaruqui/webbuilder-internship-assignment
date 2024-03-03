@@ -12,8 +12,20 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 43.75%;
   box-sizing: border-box;
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(small-desktop) {
+    font-size: 62.5%;
+  }
 }
 
 body {
@@ -38,7 +50,8 @@ body {
   @extend %container;
   padding: 0 2rem;
   margin-bottom: 8rem;
-  margin-top: 10rem;
+
+  margin-top: 10rem; // this is a tmporary style for testing, remove after completion
 
   @include respond(tab-port) {
     padding: 0 4rem;
